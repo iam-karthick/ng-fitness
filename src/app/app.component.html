@@ -1,0 +1,22 @@
+
+<!-- <button mat-icon-button>
+  <mat-icon>home</mat-icon>
+</button> -->
+<mat-sidenav-container>
+  <mat-sidenav #sidenav>
+   <app-sidenav-list (sidenavecloseToggle)="sidenav.close()"></app-sidenav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+<!-- <div [ngSwitch]="userColor">
+  <p *ngSwitchCase="'red'">red</p>
+  <p *ngSwitchCase="'blue'">blue</p>
+  <p *ngSwitchCase="'black'">black</p>
+  <p *ngSwitchCase="'gray'">gray</p>
+</div> -->

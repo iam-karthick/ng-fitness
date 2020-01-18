@@ -1,0 +1,10 @@
+<form [formGroup]="loginForm" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
+    <mat-form-field>
+        <input matInput type="email" placeholder="Email" formControlName="email" name="" id="">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput type="password" placeholder="Password" formControlName="password" name="" id="">
+        <mat-error>Require filed</mat-error>
+    </mat-form-field>
+    <button [disabled]="!loginForm.valid" mat-raised-button color="primary" (click)="onSubmit()">Submit</button>
+</form>

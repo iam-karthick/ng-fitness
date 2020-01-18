@@ -1,0 +1,24 @@
+.ch{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    // flex: 1;
+}
+#ch1{
+    background-color: orange;   
+}
+#ch3{
+    background-color: green;
+}
+#container{
+    flex-direction: row;
+    border: 1px;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    display: flex;
+    width: 100%;
+}
+.mat-form-field{
+    width: 300px;
+}
